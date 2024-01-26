@@ -11,7 +11,7 @@ yes | /opt/androidsdk/tools/bin/sdkmanager "system-images;android-28;google_apis
 
 
 #  /opt/androidsdk/tools/emulator
-/opt/androidsdk/tools/emulator -version
+/opt/androidsdk/tools/emulator -no-window -version
 
 echo "INSTALL ANDROID SDK DONE!"
 
