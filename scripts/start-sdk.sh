@@ -7,6 +7,8 @@ set -e #stop immediately if any error happens
 yes |  /opt/androidsdk/tools/bin/sdkmanager "platform-tools" "platforms;android-28" "emulator"
 yes | /opt/androidsdk/tools/bin/sdkmanager "system-images;android-28;google_apis;x86_64"
 
+
+#  /opt/androidsdk/tools/emulator
 emulator -version
 
 echo "INSTALL ANDROID SDK DONE!"

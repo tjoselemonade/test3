@@ -25,6 +25,7 @@ sudo apt install unzip -y && unzip sdk-tools-linux-4333796.zip -d $ANDROID_HOME
 echo "export ANDROID_HOME=$ANDROID_HOME" >> ~/.bashrc
 echo 'export SDK=$ANDROID_HOME' >> ~/.bashrc
 echo 'export PATH=$SDK/emulator:$SDK/tools:$SDK/tools/bin:$SDK/platform-tools:$PATH' >> ~/.bashrc
+echo 'export PATH=/opt/androidsdk/tools/emulator:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 # Install Android Image version 28
