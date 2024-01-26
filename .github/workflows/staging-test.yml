@@ -33,6 +33,14 @@ jobs:
       run: |
         java -version
 
+    - name: Install and Run Appium Server
+      run: |
+        chmod +x ./scripts/install-android-sdk.sh
+        chmod +x ./scripts/start-sdk.sh
+        chmod +x ./scripts/emulator-up.sh
+        chmod +x ./scripts/RunAppiumServer.sh # install and run appium server in the background
+        ./scripts/RunAppiumServer.sh
+
     - name: Install android SDK
       run: |
         ./scripts/install-android-sdk.sh
