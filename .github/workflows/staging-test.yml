@@ -16,6 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install and Run Appium Server
       run: |
+        chmod +x ./scripts/start-skd.sh
         chmod +x ./scripts/install-android-sdk.sh
         chmod +x ./scripts/emulator-up.sh
         chmod +x ./scripts/RunAppiumServer.sh # install and run appium server in the background
@@ -24,7 +25,11 @@ jobs:
     - name: Install android SDK
       run: |
         ./scripts/install-android-sdk.sh
+        start-skd
 
+    - name: Install android SDK
+      run: |
+        ./scripts/start-skd.sh
     - name: Install emulator
       run: |
         ./scripts/emulator-up.sh
