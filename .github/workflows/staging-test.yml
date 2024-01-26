@@ -1,0 +1,30 @@
+name: Appium CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+
+jobs:
+  test:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install and Run Appium Server
+      run: |
+        chmod +x ./scripts/install-android-sdk.sh
+        chmod +x ./scripts/emulator-up.sh
+        chmod +x ./scripts/RunAppiumServer.sh # install and run appium server in the background
+        ./scripts/RunAppiumServer.sh
+
+    - name: Install android SDK
+      run: |
+        ./scripts/install-android-sdk.sh
+
+    - name: Install emulator
+      run: |
+        ./scripts/emulator-up.sh
