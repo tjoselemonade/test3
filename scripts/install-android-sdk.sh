@@ -29,13 +29,13 @@ source ~/.bashrc
 
 # Install Android Image version 28
 
-export $JAVA_HOME=/usr/lib/jvm/temurin-11-jdk-amd64
-/usr/lib/jvm/temurin-11-jdk-amd64
-yes | /usr/lib/jvm/temurin-11-jdk-amd64/bin/java -jar /opt/androidsdk/tools/bin/sdkmanager "platform-tools" "platforms;android-28" "emulator"
-yes | /usr/lib/jvm/temurin-11-jdk-amd64/bin/java -jar /opt/androidsdk/tools/bin/sdkmanager "system-images;android-28;google_apis;x86_64"
+# export $JAVA_HOME=/usr/lib/jvm/temurin-11-jdk-amd64
+# /usr/lib/jvm/temurin-11-jdk-amd64
+# yes | /usr/lib/jvm/temurin-11-jdk-amd64/bin/java -jar /opt/androidsdk/tools/bin/sdkmanager "platform-tools" "platforms;android-28" "emulator"
+# yes | /usr/lib/jvm/temurin-11-jdk-amd64/bin/java -jar /opt/androidsdk/tools/bin/sdkmanager "system-images;android-28;google_apis;x86_64"
 
-emulator -version
+# emulator -version
 
-echo "INSTALL ANDROID SDK DONE!"
+# echo "INSTALL ANDROID SDK DONE!"
 
 echo $JAVA_HOME
