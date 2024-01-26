@@ -4,9 +4,9 @@
 set -e #stop immediately if any error happens
 
 # Install Open SDK
+java -version
 sudo apt update
 sudo apt install openjdk-8-jdk -y
-sudo update-java-alternatives --set java-1.8.0-openjdk-amd64
 sudo apt-get install android-sdk
 # Download JAXB JAR files
 wget https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
